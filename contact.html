@@ -38,7 +38,7 @@
             left: 5px;
             width: 50px;
             height: 50px;
-          "
+          " class="imgg"
         />
                     <a class="navbar-brand" href="index.html">
                         <strong><span>Evangelical Presbyterian Church Tongor-Tsanakpe</span></strong>
@@ -215,3 +215,75 @@
         <script src="js/custom.js"></script>
     </body>
 </html>
+<style>
+      /* Ensuring that the navbar adjusts well on mobile */
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      /* Customizing header images for smaller devices */
+      .slick-custom img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Adjusting text size on smaller devices */
+      .slick-title {
+        font-size: 2rem;
+      }
+
+      /* Mobile adjustments for footer and social media icons */
+      .footer-menu-link {
+        font-size: 0.9rem;
+      }
+
+      .social-icon-link {
+        font-size: 1.5rem;
+        margin-right: 10px;
+      }
+
+      /* Hide logo on small screens */
+      @media (max-width: 768px) {
+        .navbar-brand {
+          font-size: 1rem; /* smaller text for mobile */
+        }
+
+        .imgg {
+          display: none; /* Hide logo on mobile */
+        }
+
+        .slick-title {
+          font-size: 1.5rem;
+        }
+
+        .lead {
+          font-size: 1rem;
+        }
+
+        .navbar-toggler {
+          border-color: #fff;
+        }
+
+        .footer-menu-link {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand {
+          font-size: 1rem; /* even smaller text for very small screens */
+        }
+
+        .slick-title {
+          font-size: 1.2rem;
+        }
+
+        .lead {
+          font-size: 0.9rem;
+        }
+
+        .social-icon-link {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
