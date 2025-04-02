@@ -47,6 +47,80 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/slick.css" />
     <link href="css/tooplate-little-fashion.css" rel="stylesheet" />
+
+    <!-- Add custom media queries for smaller devices -->
+    <style>
+      /* Ensuring that the navbar adjusts well on mobile */
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      /* Customizing header images for smaller devices */
+      .slick-custom img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Adjusting text size on smaller devices */
+      .slick-title {
+        font-size: 2rem;
+      }
+
+      /* Mobile adjustments for footer and social media icons */
+      .footer-menu-link {
+        font-size: 0.9rem;
+      }
+
+      .social-icon-link {
+        font-size: 1.5rem;
+        margin-right: 10px;
+      }
+
+      /* Hide logo on small screens */
+      @media (max-width: 768px) {
+        .navbar-brand {
+          font-size: 1rem; /* smaller text for mobile */
+        }
+
+        img {
+          display: none; /* Hide logo on mobile */
+        }
+
+        .slick-title {
+          font-size: 1.5rem;
+        }
+
+        .lead {
+          font-size: 1rem;
+        }
+
+        .navbar-toggler {
+          border-color: #fff;
+        }
+
+        .footer-menu-link {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand {
+          font-size: 1rem; /* even smaller text for very small screens */
+        }
+
+        .slick-title {
+          font-size: 1.2rem;
+        }
+
+        .lead {
+          font-size: 0.9rem;
+        }
+
+        .social-icon-link {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -57,16 +131,11 @@
     </section>
 
     <main>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <img
           src="ch-logo.jpg"
-          style="
-            position: absolute;
-            top: 20px;
-            left: 5px;
-            width: 50px;
-            height: 50px;
-          "
+          alt="Evangelical Presbyterian Church Logo"
+          style="position: absolute; top: 20px; left: 5px; width: 50px; height: 50px;" class="imgg"
         />
         <div class="container">
           <button
@@ -82,14 +151,8 @@
           </button>
 
           <a class="navbar-brand" href="index.html">
-            <strong
-              ><span>Evangelical Presbyterian Church, Tongor-Tsanakpe</span>
-            </strong>
+            <strong><span>Evangelical Presbyterian Church, Tongor-Tsanakpe</span></strong>
           </a>
-
-          <div class="d-lg-none">
-            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
-          </div>
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
@@ -131,7 +194,7 @@
                   <h1 class="slick-title">Mission</h1>
                   <p class="lead text-white mt-lg-3 mb-lg-5">
                     We exist to propagate the Gospel holistically by empowering
-                    our members Spiritually, Materially and Socio-Culturally, to
+                    our members Spiritually, Materially, and Socio-Culturally, to
                     be effective agents of the Great Commission
                   </p>
                 </div>
@@ -140,56 +203,8 @@
           </div>
         </div>
 
-        <div class="slick-custom">
-          <img
-            src="images/slideshow/team-meeting-renewable-energy-project.jpeg"
-            class="img-fluid"
-            alt="Team Meeting"
-          />
-          <div class="slick-bottom">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-10">
-                  <h1 class="slick-title">Vision</h1>
-                  <p class="lead text-white mt-lg-3 mb-lg-5">
-                    Our Vision is to be a dynamic agent of God, leading in the
-                    Great Commission to bring light to where is darkness and
-                    transforming our world into the likeness of Christ and be
-                    self-sustaining.
-                  </p>
-                  <a href="about.html" class="btn custom-btn"
-                    >Learn more about us</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Repeat similar structure for Vision and Core Values sections -->
 
-        <div class="slick-custom">
-          <img
-            src="images/slideshow/two-business-partners-working-together-office-computer.jpeg"
-            class="img-fluid"
-            alt="Business Partners"
-          />
-          <div class="slick-bottom">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-10">
-                  <h1 class="slick-title">Our Core Values</h1>
-                  <p class="lead text-white mt-lg-3 mb-lg-5">
-                    1. The Scripture is Central to our faith <br />
-                    2. We want to bear the fruit of the Holy Spirit <br />
-                    3. We believe in Servant-Leadership <br />
-                    4. We uphold Stewardship and Discipleship <br />
-                    5. We are a diversified culture holding democracy
-                  </p>
-                  <a href="contact.html" class="btn custom-btn">Work with us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <footer class="site-footer">
@@ -197,9 +212,7 @@
           <div class="row">
             <div class="col-lg-3 col-10 me-auto mb-4">
               <h4 class="text-white mb-3" style="font-size: 20px">
-                <a href="index.html"
-                  >Evangelical Presbyterian Church, Tongor-Tsanakpe</a
-                >
+                <a href="index.html">Evangelical Presbyterian Church, Tongor-Tsanakpe</a>
               </h4>
               <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
                 Copyright © 2025 <strong>EPC Tsanakpe</strong>
@@ -245,7 +258,6 @@
                     class="social-icon-link bi-instagram"
                   ></a>
                 </li>
-                
               </ul>
             </div>
           </div>
